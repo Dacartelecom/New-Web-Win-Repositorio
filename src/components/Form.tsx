@@ -74,7 +74,7 @@ const Form: FC<FormProps> = ({
           justify-center
         "
       >
-        <div className='Mensaje-Error'>{ error }</div>
+        <div className='Mensaje-Error text-[#ff5a0a]'>{ error }</div>
         <Button
           text={"Envíanos Tu Número"}
           onClick={ onClick }

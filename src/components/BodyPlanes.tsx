@@ -16,6 +16,7 @@ const BodyPlanes: FC<BodyPlanesProps> = ({
   img,
   timePromo,
   regularPrice,
+  regularPrice2,
   imgs,
   onClick
 }) => {
@@ -152,6 +153,14 @@ const BodyPlanes: FC<BodyPlanesProps> = ({
         '
       >
         { timePromo }
+      </span>
+      <span
+        className='
+          text-[#301D19]
+          font-bold
+        '
+      >
+        { regularPrice2 }
       </span>
       <span
         className='

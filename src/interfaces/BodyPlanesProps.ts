@@ -17,6 +17,7 @@ export interface BodyPlanesProps {
   price: number
   timePromo: string
   regularPrice: number
+  regularPrice2?: string
   imgs?: img[]
   onClick: (e: any) => void
 }

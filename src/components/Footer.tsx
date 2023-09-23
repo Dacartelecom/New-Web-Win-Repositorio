@@ -60,8 +60,8 @@ const Footer = () => {
 
          <div className='condiciones-footer'>
         <ul className='w-full'>
-          <li><span  className='terminos-condiciones' onClick={viewModalT}>Términos y Condiciones de la Web</span></li>
-          <li><span  className='terminos-condiciones' onClick={viewModalC}>Políticas de privacidad</span></li>
+          <li><span  className='terminos-condiciones' onClick={viewModalT}>Términos y Condiciones del Sitio Web</span></li>
+          <li><span  className='terminos-condiciones' onClick={viewModalC}>Política de Privacidad</span></li>
         </ul>
           </div>
 
