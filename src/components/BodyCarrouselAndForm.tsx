@@ -1,5 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
 'use client'
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 import Carrousel from "../components/Carrousel";
 import { EmblaOptionsType } from "embla-carousel-react";
 import { CSSProperties } from "react";
@@ -14,6 +17,7 @@ import imageDesktop3 from '../../public/WinPortada2.webp';
 import imageDesktop4 from '../../public/WinPortada3.webp';
 import imageDesktop5 from '../../public/WinPortada4.webp';
 import Form from "../components/Form";
+import './Global.css'
 
 const OPTIONS: EmblaOptionsType = {
   loop: true,
@@ -24,42 +28,81 @@ const SLIDE_COUNT= 5;
 
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {
-  height: '640px'
+  height: '640px',
+  marginTop:'295px'
 };
 const STYLES_DESKTOP: CSSProperties = {
-  aspectRatio: 3.095
+  aspectRatio: 3.095,
+  marginTop: 169,
 };
 
 export const imagesMobile = [
-  imageMobil1,
-  imageMobil2,
-  imageMobil3,
-  imageMobil4,
-  imageMobil5
+  `${imageMobil1}`,
+  `${imageMobil2}`,
+  `${imageMobil3}`,
+  `${imageMobil4}`,
+  `${imageMobil5}`
 ];
 
 export const imagesDesktop = [
-  imageDesktop1,
-  imageDesktop2,
-  imageDesktop3,
-  imageDesktop4,
-  imageDesktop5
+  `${imageDesktop1}`,
+  `${imageDesktop2}`,
+  `${imageDesktop3}`,
+  `${imageDesktop4}`,
+  `${imageDesktop5}`,
 ];
+
 
 const BodyCarrouselAndForm = () => {
   const [inputState, setInputState] = useState<string>('');
+  const [tSource, setTSource] = useState<string>('');
+  const [error, setError] = useState<string>('');
 
+
+  const interval = (error:string) => {
+    setError(error)
+    setTimeout(() => {
+      setError('')
+    }, 3000);
+  }
+  
+  
   const setNumber = (e: any) => {
     const value = e.target.value;
 
     if (/^\d*$/.test(value)) {
       if (value.length <= 9) {
-        setInputState((prev) => (value))
+        setInputState((_prev) => (value))
       } else {
         setInputState((prev) => (prev))
       }
     }
   };
+  useEffect(() => {
+    if (window) {
+      const url = new URLSearchParams(window.location.search);
+
+      const tSource = url.get('T-source');
+
+      if (tSource) {
+        setTSource(tSource);
+      }
+    }
+  },[]);
+
+  useEffect(() => {
+    if (tSource) {
+      switch (tSource) {
+        case '01winperu':
+          setInputState(() => '(01) 6806775');
+          break;
+  
+        default:
+          setInputState(() => '(01) 6806774');
+          break;
+      }
+    }
+  }, [tSource]);
 
   const sendNumber = (e: any) => {
     e.preventDefault();
@@ -70,11 +113,16 @@ const BodyCarrouselAndForm = () => {
     // wsDataA.append("username", "dacarEs");
     // wsDataA.append("password", "jAcXDq35DJLBWfMzTxGG");
 
-    wsDataA.append("service", "PeruHfcCallme");
-    wsDataA.append("username", "dacar");
-    wsDataA.append("password", "StzsK46vs0a4nCJU55wD");
+    if (tSource == '01winperu') {
+      wsDataA.append("service", "callmeWinPeru1");
+    } else {
+      wsDataA.append("service", "callmeWinPeru");
+    }
+    wsDataA.append("username", "dacarEs");
+    wsDataA.append("password", "jAcXDq35DJLBWfMzTxGG");
     wsDataA.append("telephone", inputState);
     wsDataA.append("ip", "127.0.0.1");
+    wsDataA.append("tsource", tSource);
 
     const leadUrlA = "https://ws-dacar-ica.octopus-latam.com/?" + wsDataA.toString();
 
@@ -84,7 +132,11 @@ const BodyCarrouselAndForm = () => {
       .then((response) => {
         console.log(response);
         console.log(leadUrlA);
-
+        if (response.status === 'ERROR') {
+          interval('Estimado cliente el número debe tener 9 dígitos o esta mal colocado.')
+        } else {
+          interval('En breve un asesor se pondrá en contacto contigo para resolver tus dudas. Gracias')
+        }
         setInputState(() => (''));
       });
   };
@@ -98,7 +150,7 @@ const BodyCarrouselAndForm = () => {
         <Carrousel
           classNameSlide="embla__slide"
           slides={ SLIDES }
-          images={ imagesMobile }
+          images={ imagesMobile } 
           options={ OPTIONS }
           haveButtons={ true }
           haveDots={ true }
@@ -120,7 +172,7 @@ const BodyCarrouselAndForm = () => {
         <Form
           className="
             max-md:relative
-            md:top-[calc(50%-130px)]
+            md:top-[calc(50%-65px)]
             md:right-[5%]
             lg:absolute
             max-w-[340px]
@@ -130,6 +182,7 @@ const BodyCarrouselAndForm = () => {
           inputState={ inputState }
           inputChange={ setNumber }
           onClick={ sendNumber }
+          error={error}
         >
           <>
             <span
@@ -138,7 +191,8 @@ const BodyCarrouselAndForm = () => {
                     max-md:text-lg
                     max-xl:text-sm
                     xl:text-lg
-                  "
+                    rebote
+                    "
             >
               ¡Déjanos tu número y nos pondremos en contacto!
             </span>
@@ -151,7 +205,7 @@ const BodyCarrouselAndForm = () => {
                     xl:text-4xl
                   "
             >
-              !CONTRATA WIN¡
+              ¡CONTRATA WIN!
             </span>
           </>
         </Form>

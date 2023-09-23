@@ -4,7 +4,7 @@ import { CSSProperties } from "react"
 
 export interface CarrouselProps {
   slides: number[]
-  images?: []
+  images?: string[]
   options?: EmblaOptionsType
   haveButtons?: boolean
   haveDots?: boolean

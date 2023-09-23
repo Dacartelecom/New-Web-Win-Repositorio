@@ -1,7 +1,7 @@
 
 const imageByIndex = (
   index: number,
-  images: []
+  images: string[]
 ) => images[index % images.length];
 
 export default imageByIndex;

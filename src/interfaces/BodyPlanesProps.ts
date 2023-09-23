@@ -1,7 +1,7 @@
 import { CSSProperties } from "react"
 
 interface img {
-  img: any
+  img: string
   text: string
 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 import  { FC, useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react';
@@ -23,7 +24,7 @@ const Carrousel: FC<CarrouselProps> = ({
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
-  const [intervalTime, setIntervalTime] = useState(interval)
+  const [intervalTime] = useState(interval)
 
   const scrollPrev = useCallback(() => {
     emblaApi && emblaApi.scrollPrev()
@@ -71,6 +72,8 @@ const Carrousel: FC<CarrouselProps> = ({
     <div
       className={`
         relative
+        z-0
+
         ${ className }
       `}
     >

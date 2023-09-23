@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 import { useEffect, useState } from 'react';
 import Sections from './Sections';
@@ -21,7 +24,6 @@ import duo from '../../public/duo.png'
 import tvwin from '../../public/tvwin.png'
 import sports from '../../public/sports.png'
 import multi from '../../public/multitv.png'
-
 
 const ARRAY_TRIO=[
 {
@@ -243,8 +245,11 @@ const OPTIONS_CARDS: EmblaOptionsType = {
 };
 
 const BodyCards = () => {
-  const viewModal = () => setActiveModal((prev) => (true));
-  const closeModal = () => setActiveModal((prev) => (false));
+  const [numberCall, setNumberCall] = useState<string>('(01) 6806774');
+  const [tSource, setTSource] = useState<string>('');
+  const [inputState, setInputState] = useState<string>('');
+  const viewModal = () => setActiveModal((_prev) => (true));
+  const closeModal = () => setActiveModal((_prev) => (false));
   const getChildrens = (array: any[]) => (array.map((item, index) => {
     const {
       title,
@@ -292,7 +297,7 @@ const BodyCards = () => {
 
     if (/^\d*$/.test(value)) {
       if (value.length <= 9) {
-        setInputState((prev) => (value))
+        setInputState((_prev) => (value))
       } else {
         setInputState((prev) => (prev))
       }
@@ -303,16 +308,17 @@ const BodyCards = () => {
 
     const wsDataA = new URLSearchParams(window.location.search);
 
-    wsDataA.append("service", "callmeWinPeru1");
+    if (tSource == '01winperu') {
+      wsDataA.append("service", "callmeWinPeru1");
+    } else {
+      wsDataA.append("service", "callmeWinPeru");
+    }
     wsDataA.append("username", "dacarEs");
     wsDataA.append("password", "jAcXDq35DJLBWfMzTxGG");
     wsDataA.append("telephone", inputState);
-
-    if (tSource) {
-      wsDataA.append("t-source", tSource);
-    }
-
     wsDataA.append("ip", "127.0.0.1");
+    wsDataA.append("tsource", tSource);
+
 
     const leadUrlA = "https://ws-dacar-ica.octopus-latam.com/?" + wsDataA.toString();
 
@@ -483,7 +489,6 @@ const BodyCards = () => {
           stylesMbps: { color: '#26aae1' },
           mbps: 600,
           mbpsLast: undefined,
-          aditional: 'Incluye 2 Mesh + McAffe',
           promo: 'Duplica tu velocidad x6 meses',
           img: IMG,
           stylesPrice: { background: '#26aae1', border: '1px solid #26aae1' },
@@ -499,7 +504,6 @@ const BodyCards = () => {
           stylesMbps: { color: '#26aae1' },
           mbps: 1000,
           mbpsLast: undefined,
-          aditional: 'Incluye 2 Mesh + McAffe',
           promo: 'Duplica tu velocidad x6 meses',
           img: IMG,
           stylesPrice: { background: '#26aae1', border: '1px solid #26aae1' },
@@ -861,7 +865,6 @@ const BodyCards = () => {
           stylesMbps: { color: '#26aae1' },
           mbps: 1000,
           mbpsLast: undefined,
-          aditional: 'Incluye 2 Mesh + McAffe',
           promo: 'Duplica tu velocidad x6 meses',
           img: IMG,
           stylesPrice: { background: '#26aae1', border: '1px solid #26aae1' },
@@ -1333,21 +1336,20 @@ const BodyCards = () => {
   ];
 
   const [activeModal, setActiveModal] = useState(false);
-  const [inputState, setInputState] = useState<string>('');
+
   const [selectedIndexSections, setSelectedIndexSections] = useState<number>(0);
   const [selectedIndexSubSections, setSelectedIndexSubSections] = useState<number>(0);
   const [subSections, setSubSections] = useState<string[]>(SUB_SECTIONS[0]);
   const [slideCountCards, setSlideCountCards] = useState<number>(ARRAYS_CHILDRENS[0][0].length);
   const [slideCards, setSlideCards] = useState<number[]>(Array.from(Array(slideCountCards).keys()));
   const [childrens, setChildrens] = useState<JSX.Element[]>(getChildrens(ARRAYS_CHILDRENS[0][0]));
-  const [numberCall, setNumberCall] = useState<string>('(01) 6806775');
-  const [tSource, setTSource] = useState<undefined | string>(undefined);
+  
 
   useEffect(() => {
     if (window) {
       const url = new URLSearchParams(window.location.search);
 
-      const tSource = url.get('t-source');
+      const tSource = url.get('T-source');
 
       if (tSource) {
         setTSource(tSource);
@@ -1358,12 +1360,12 @@ const BodyCards = () => {
   useEffect(() => {
     if (tSource) {
       switch (tSource) {
-        case 'prueba':
-          setNumberCall(() => '(01) 1234567');
+        case '01winperu':
+          setNumberCall(() => '(01) 6806775');
           break;
       
         default:
-          setNumberCall(() => '(01) 6806775');
+          setNumberCall(() => '(01) 6806774');
           break;
       }
     }
@@ -1431,7 +1433,6 @@ const BodyCards = () => {
         <Form
           className='
             relative
-            z-1000
             max-w-[450px]
           '
           id='number-modal'
@@ -1448,7 +1449,7 @@ const BodyCards = () => {
                     lg:text-4xl
                   "
             >
-              !Excelente Elección¡
+              ¡Excelente Elección!
             </span>
             <span
               className="
@@ -1468,7 +1469,7 @@ const BodyCards = () => {
                     text-[#301d19]
                   "
             >
-              { numberCall }
+              <a href={`tel:${ numberCall }`}>{ numberCall }</a>
             </span>
             <span
               className="

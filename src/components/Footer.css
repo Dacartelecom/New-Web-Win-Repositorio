@@ -3,7 +3,7 @@
 
 }
 .footer-links{
-  width: 90%;
+  width: 80%;
   margin: auto;
   color: #301D19;
   font-size: 1rem;
@@ -38,13 +38,14 @@
 
 .condiciones-footer{
   float: left;
+  margin-top: 3em;
 }
 
 .condiciones-footer ul{
   list-style: none;
   color: white;
   text-align: center;
-  font-size: 70%;
+  font-size: 100%;
   
 }
 
@@ -68,6 +69,9 @@
 
 
 @media (max-width: 768px) {
+  .container-footer{
+    display: block;
+  }
   .footer-links{
     display: block;
     width: 80%;
@@ -81,6 +85,10 @@
     font-size: 2rem;
     margin: 1em auto;
   }
+  .condiciones-footer{
+    font-size: 1.3rem;
+    margin: 1em auto;
+  }
   .number-header-footer li{
     margin-top: 2rem;
   }
@@ -92,6 +100,12 @@
   }
   .body-condiciones{
     font-size: 0.9em;
+  }
+  
+  .line{
+    margin-top: 70px;
+    width: 80%;
+    display: block;
   }
 }
 

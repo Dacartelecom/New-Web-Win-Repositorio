@@ -1,7 +1,7 @@
 'use client'
+import './Global.css'
 import { ModalProps } from '../interfaces/ModalProps'
 import  { FC } from 'react'
-import './Global.css'
 
 const Modal: FC<ModalProps> = ({
   children,
@@ -12,7 +12,7 @@ const Modal: FC<ModalProps> = ({
     <div
       className={`
         modal
-        ${ active ? 'active' : '' }
+        ${ active ? 'active' : 'hidden' }
         w-screen
         h-screen
         top-0
@@ -22,11 +22,12 @@ const Modal: FC<ModalProps> = ({
         flex
         items-center
         justify-center
-        z-100
         transform
         transition-all
         duration-300
+        z-10
       `}
+      
     >
       <div
         onClick={ onClick }
@@ -37,7 +38,7 @@ const Modal: FC<ModalProps> = ({
           inset-0
           bg-gray-800
           opacity-75
-          z-25
+          z-100
         '
       ></div>
       { children }

@@ -9,7 +9,8 @@ const Form: FC<FormProps> = ({
   children,
   inputState,
   inputChange,
-  onClick
+  onClick,
+  error
 }) => {
   return (
     <form
@@ -49,7 +50,7 @@ const Form: FC<FormProps> = ({
         <input
           id={ id }
           type="number"
-          placeholder="ingresa tu numero"
+          placeholder="ingresa tu nro. Aquí"
           value={ inputState }
           onChange={ inputChange }
           className="
@@ -68,14 +69,16 @@ const Form: FC<FormProps> = ({
       </div>
       <div
         className="
-          flex
+          block
           items-center
           justify-center
         "
       >
+        <div className='Mensaje-Error'>{ error }</div>
         <Button
-          text={"Envíanos tu número"}
+          text={"Envíanos Tu Número"}
           onClick={ onClick }
+          disabled={ inputState.length === 9 ? false : true }
         />
       </div>
     </form>
