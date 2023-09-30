@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 import  { useEffect, useState } from 'react';
-import logo from '../../public/win_logo.png';
+import logo from '../../public/win_logo_white.png';
 import Modal from './Modal';
 
 
@@ -43,15 +43,13 @@ const Header = () => {
     <header
       className='
         grid
-        grid-cols-2
-        gap-100
+        grid-cols-3
+        gap-0
         w-full
         max-md:h-29
         max-md:block
         max-md:m-auto
-        bg-slate-100
-        fixed
-
+        bg-[#ff5a0a]           
         z-10
       '
     >
@@ -59,7 +57,7 @@ const Header = () => {
           src={ `${logo}` }
           alt='logo win'
           className='
-            w-3/12
+            w-4/12
             h-auto
             object-contain
             my-2
@@ -68,6 +66,8 @@ const Header = () => {
           max-md:w-2/5
           '
         />
+        
+        <div className='text-white mt-14 text-xl max-md:hidden'>WIN - AGENCIA AUTORIZADA AGORA TELECOM</div>
 
       <div
         className='
@@ -76,24 +76,22 @@ const Header = () => {
           items-center
           lg:text-4xl
           font-bold
-          max-md:mt-10
+          max-md:mt-5
           text-left 
+
           max-md:text-center
         '
       >
-
     <div className='
         block
         h-full
         items-center
-        bg-[#ff5a0a]           
         text-white            
-        hover:bg-[#CC4B0E]
         hover:cursor-pointer
         duration-300
         ease-linear
         max-md:text-3xl
-        pl-10
+        pl-4
         py-2
           '>
     <span className=''
@@ -102,7 +100,7 @@ const Header = () => {
         lg:text-3xl
         max-md:text-2xl
         '>
-          Llámanos al<br/>
+          Contrata WIN llamando al<br/>
         </span>
           <a href={`tel:${ numberCall }`} className='
         lg:text-6xl
@@ -112,17 +110,25 @@ const Header = () => {
         <br />
         <span className='
           p-1
-          text-xs 
-          rounded-full border 
+          text-[11px]
+          rounded-full  
+          bg-white
+          text-[#301D19]
+          border-[1px]
           border-[#301D19]
           cursor-pointer 
           transition-all 
           duration-500 
           hover:bg-[#301D19]
           hover:text-white
-          max-md:text-justify'
+          max-md:text-justify
+          max-md:ml-[-10px]
+          shadow-black
+             inset-0
+            shadow-inner
+          '
           
-          onClick={viewModal}>ATENCIÓN AL CLIENTE Y/O RECLAMOS, HAZ CLIC AQUÍ</span>
+          onClick={viewModal}>PARA ATENCIÓN AL CLIENTE Y/O RECLAMOS, HAZ CLIC AQUÍ</span>
     </div>
       </div>
       <Modal active={ activeModal }

@@ -241,7 +241,7 @@ const SUB_SECTIONS: string[][] = [
 const OPTIONS_CARDS: EmblaOptionsType = {
   loop: false,
   slidesToScroll: 1,
-  startIndex: 10,
+  startIndex: 0,
 };
 
 const BodyCards = () => {

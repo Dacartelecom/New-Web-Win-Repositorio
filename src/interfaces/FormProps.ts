@@ -6,6 +6,7 @@ export interface FormProps {
   error?:string
   children: ReactElement
   inputState: string
+  onSubmit?:any
   inputChange: (e: any) => void
   onClick: (e: any) => void
 }

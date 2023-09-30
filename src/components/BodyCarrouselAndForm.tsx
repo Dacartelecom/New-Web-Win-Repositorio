@@ -29,11 +29,9 @@ const SLIDE_COUNT= 5;
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {
   height: '640px',
-  marginTop:'295px'
 };
 const STYLES_DESKTOP: CSSProperties = {
   aspectRatio: 3.095,
-  marginTop: 169,
 };
 
 export const imagesMobile = [
@@ -123,7 +121,6 @@ const BodyCarrouselAndForm = () => {
     wsDataA.append("telephone", inputState);
     wsDataA.append("ip", "127.0.0.1");
     wsDataA.append("tsource", tSource);
-
     const leadUrlA = "https://ws-dacar-ica.octopus-latam.com/?" + wsDataA.toString();
 
     fetch(leadUrlA)
@@ -172,7 +169,7 @@ const BodyCarrouselAndForm = () => {
         <Form
           className="
             max-md:relative
-            md:top-[calc(50%-65px)]
+            md:top-[calc(50%-150px)]
             md:right-[5%]
             lg:absolute
             max-w-[340px]

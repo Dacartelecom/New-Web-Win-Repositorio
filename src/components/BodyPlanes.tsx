@@ -24,11 +24,12 @@ const BodyPlanes: FC<BodyPlanesProps> = ({
     <div
       className='
         grid
+        w-200
         grid-rows-[repeat(10,auto)]
-        gap-4
+        gap-2
         items-start
         justify-center
-        px-12
+        px-11
         py-1
         text-center
       '
@@ -189,7 +190,7 @@ const BodyPlanes: FC<BodyPlanesProps> = ({
               <div
                 key={ index }
                 className='
-                  w-10
+                  w-24
                   flex
                   flex-col
                   items-center
@@ -204,7 +205,7 @@ const BodyPlanes: FC<BodyPlanesProps> = ({
                 />
                 <span
                   className='
-                    m-2
+                    m-1
                     text-center
                     text-xs
                     text-[#000000]

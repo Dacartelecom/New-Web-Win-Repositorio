@@ -45,7 +45,7 @@ const BodyText = () => {
           "
       >
         Contrata HOY un TRÍO WIN con Internet 100% Fibra + DGO + FONOWIN a un
-        precio promocional a los 2 primeros meses y duplicamos la velociadad de
+        precio promocional a los 2 primeros meses y duplicamos la velocidad de
         tu Internet por 3 meses
       </p>
     </div>

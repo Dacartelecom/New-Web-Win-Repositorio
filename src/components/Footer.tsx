@@ -66,9 +66,9 @@ const Footer = () => {
           </div>
 
     </div>
-    <div className='line'>
+    <div className='line '>
       <hr />
-        <span>Agora Telecom SAC - Distribuidor Autorizado de WIN</span>
+        <span className='bg-white text-[#ff5a0a] p-1 mr-20 rounded-lg max-md:hidden'>WIN - AGENCIA AUTORIZADA AGORA TELECOM</span>
       </div>
       
     </div>

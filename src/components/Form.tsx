@@ -29,6 +29,9 @@ const Form: FC<FormProps> = ({
         max-md:p-6
         md:p-4
       `}
+      action=''
+      onSubmit={ onClick }
+
     >
       <label
         htmlFor={ id }
@@ -50,7 +53,7 @@ const Form: FC<FormProps> = ({
         <input
           id={ id }
           type="number"
-          placeholder="ingresa tu nro. Aquí"
+          placeholder="Ingresa tu nro. Aquí"
           value={ inputState }
           onChange={ inputChange }
           className="
@@ -77,8 +80,8 @@ const Form: FC<FormProps> = ({
         <div className='Mensaje-Error text-[#ff5a0a]'>{ error }</div>
         <Button
           text={"Envíanos Tu Número"}
-          onClick={ onClick }
           disabled={ inputState.length === 9 ? false : true }
+          type={"button"}
         />
       </div>
     </form>
