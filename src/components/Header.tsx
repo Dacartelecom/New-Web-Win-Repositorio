@@ -78,7 +78,6 @@ const Header = () => {
           font-bold
           max-md:mt-5
           text-left 
-
           max-md:text-center
         '
       >

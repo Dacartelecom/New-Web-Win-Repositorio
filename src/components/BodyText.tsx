@@ -27,27 +27,26 @@ const BodyText = () => {
       </h1>
       <h2
         className="
-            max-lg:text-3xl
-            lg:text-5xl
+            max-lg:text-2xl
+            lg:text-4xl
             font-bold
             flex
             items-center
             justify-center
           "
       >
-        Arma tu plan WIN
+        Elige el Plan WIN que mejor se adapte a tus necesidades
       </h2>
       <p
         className="
             font-semibold
             max-lg:text-lg
-            lg:text-2xl
+            lg:text-xl
           "
       >
-        Contrata HOY un TRÍO WIN con Internet 100% Fibra + DGO + FONOWIN a un
-        precio promocional a los 2 primeros meses y duplicamos la velocidad de
-        tu Internet por 3 meses
+        Contrata HOY un TRÍO WIN con Internet 100% Fibra + WINTV + FONOWIN a un precio promocional por los 2 primeros meses y duplicamos la velocidad de tu Internet durante 3 meses
       </p>
+
     </div>
   );
 };

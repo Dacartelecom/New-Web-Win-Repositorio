@@ -6,16 +6,18 @@ import  { useEffect, useState } from 'react';
 import Carrousel from "../components/Carrousel";
 import { EmblaOptionsType } from "embla-carousel-react";
 import { CSSProperties } from "react";
-import imageMobil1 from '../../public/WinPortadaCel.webp';
-import imageMobil2 from '../../public/WinPortadaCel1.webp';
-import imageMobil3 from '../../public/WinPortadaCel2.webp';
-import imageMobil4 from '../../public/WinPortadaCel3.webp';
-import imageMobil5 from '../../public/WinPortadaCel4.webp';
-import imageDesktop1 from '../../public/WinPortada.webp';
-import imageDesktop2 from '../../public/WinPortada1.webp';
-import imageDesktop3 from '../../public/WinPortada2.webp';
-import imageDesktop4 from '../../public/WinPortada3.webp';
-import imageDesktop5 from '../../public/WinPortada4.webp';
+import imageMobil1 from '../../public/WinPortadaCel1.webp';
+import imageMobil2 from '../../public/WinPortadaCel2.webp';
+import imageMobil3 from '../../public/WinPortadaCel3.webp';
+import imageMobil4 from '../../public/WinPortadaCel4.webp';
+import imageMobil5 from '../../public/WinPortadaCel5.webp';
+import imageMobil6 from '../../public/WinPortadaCel6.webp';
+import imageDesktop1 from '../../public/WinPortada1.webp';
+import imageDesktop2 from '../../public/WinPortada2.webp';
+import imageDesktop3 from '../../public/WinPortada3.webp';
+import imageDesktop4 from '../../public/WinPortada4.webp';
+import imageDesktop5 from '../../public/WinPortada5.webp';
+import imageDesktop6 from '../../public/WinPortada6.webp';
 import Form from "../components/Form";
 import './Global.css'
 
@@ -24,7 +26,7 @@ const OPTIONS: EmblaOptionsType = {
   slidesToScroll: 'auto',
   containScroll: 'trimSnaps'
 };
-const SLIDE_COUNT= 5;
+const SLIDE_COUNT= 6;
 
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {
@@ -35,19 +37,23 @@ const STYLES_DESKTOP: CSSProperties = {
 };
 
 export const imagesMobile = [
+
   `${imageMobil1}`,
   `${imageMobil2}`,
   `${imageMobil3}`,
   `${imageMobil4}`,
-  `${imageMobil5}`
+  `${imageMobil5}`,
+  `${imageMobil6}`,
 ];
 
 export const imagesDesktop = [
+
   `${imageDesktop1}`,
   `${imageDesktop2}`,
   `${imageDesktop3}`,
   `${imageDesktop4}`,
   `${imageDesktop5}`,
+  `${imageDesktop6}`,
 ];
 
 

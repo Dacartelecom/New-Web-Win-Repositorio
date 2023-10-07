@@ -14,6 +14,19 @@ function App() {
       <BodyCarrouselAndForm />
       <BodyText />
       <BodyCards />
+      <p
+        className="
+            font-semibold
+            max-lg:text-lg
+            lg:text-xl
+            text-[#b7b7b7]
+            w-full
+            text-center
+            my-3
+          "
+      >
+        Todas las Ofertas y Promociones vigentes hasta 31/10/2023
+      </p>
       <Footer />
     </>
   )

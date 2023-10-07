@@ -40,19 +40,19 @@ const ARRAY_TRIO=[
   text:'+30 canales en vivo'
 },{
   img:diamante,
-  text:'Greaba tu programa favorito'
+  text:'Graba tus programas favoritos'
 },{
   img:gol,
   text:'Retrocede en vivo'
 },{
   img:fonowin,
-  text:'Tu teléfono fijo estes donde estés'
+  text:'Tu teléfono fijo estés donde estés'
 },{
   img:peru,
   text:'Llama a todo el Perú'
 },{
   img:duo,
-  text:'Conectalo y úsalo'
+  text:'Conéctalo y úsalo'
 }]
 
 const ARRAY_TRIO_DGO=[
@@ -70,19 +70,19 @@ const ARRAY_TRIO_DGO=[
     text:'+60 canales en vivo'
   },{
     img:diamante,
-    text:'Greaba tu programa favorito'
+    text:'Graba tus programas favoritos'
   },{
     img:sports,
     text:'Lo mejor del deporte por DSPORTS'
   },{
     img:fonowin,
-    text:'Tu teléfono fijo estes donde estés'
+    text:'Tu teléfono fijo estés donde estés'
   },{
     img:peru,
     text:'Llama a todo el Perú'
   },{
     img:duo,
-    text:'Conectalo y úsalo'
+    text:'Conéctalo y úsalo'
   }
 ]
 
@@ -101,19 +101,19 @@ const ARRAY_TRIO_DGOFULL=[
     text:'+80 canales en vivo'
   },{
     img:diamante,
-    text:'Greaba tu programa favorito'
+    text:'Graba tus programas favoritos'
   },{
     img:sports,
     text:'Lo mejor del deporte por DSPORTS'
   },{
     img:fonowin,
-    text:'Tu teléfono fijo estes donde estés'
+    text:'Tu teléfono fijo estés donde estés'
   },{
     img:peru,
     text:'Llama a todo el Perú'
   },{
     img:duo,
-    text:'Conectalo y úsalo'
+    text:'Conéctalo y úsalo'
   }
 ]
 
@@ -154,7 +154,7 @@ const ARRAY_DUO_DGO=[
     text:'+60 canales en vivo'
   },{
     img:multi,
-    text:'Hasta 2 dispositivos en simultaneo'
+    text:'Hasta 2 dispositivos en simultáneo'
   },{
     img:sports,
     text:'Lo mejor del deporte por DSPORTS'
@@ -176,7 +176,7 @@ const ARRAY_DUO_DGOFULL=[
     text:'+80 canales en vivo'
   },{
     img:multi,
-    text:'Hasta 2 dispositivos en simultaneo'
+    text:'Hasta 2 dispositivos en simultáneo'
   },{
     img:sports,
     text:'Lo mejor del deporte por DSPORTS'
@@ -195,13 +195,13 @@ const ARRAY_DUO_FONO=[
     text:'Mayor velocidad'
   },{
     img:fonowin,
-    text:'Tu teléfono fijo estes donde estés'
+    text:'Tu teléfono fijo estés donde estés'
   },{
     img:peru,
     text:'Llama a todo el Perú'
   },{
     img:duo,
-    text:'Conectalo y úsalo'
+    text:'Conéctalo y úsalo'
   }
 ]
 
@@ -215,23 +215,23 @@ const IMG = {
 
 const SUB_SECTIONS: string[][] = [
   [
-    'Internet + Televisión + FONOWIN',
+    'Internet + WINTV + FONOWIN',
     'Internet + DGO Básico + FONOWIN',
     'Internet + DGO Full + FONOWIN',
   ],
   [
-    'Internet + Televisión Digital',
+    'Internet + WINTV',
     'Internet + DGO Básico',
     'Internet + DGO Full',
     'Internet + FONOWIN',
   ],
   [
-    'Internet + Televisión + FONOWIN',
+    'Internet + WINTV + FONOWIN',
     'Internet + DGO Básico + FONOWIN',
     'Internet + DGO Full + FONOWIN',
   ],
   [
-    'Internet + Televisión Digital',
+    'Internet + WINTV',
     'Internet + DGO Básico',
     'Internet + DGO Full',
     'Internet + FONOWIN',
@@ -347,9 +347,9 @@ const BodyCards = () => {
           mbpsLast: 100,
           promo: 'Duplica tu velocidad x3 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 99,
+          price: 104,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 124,
+          regularPrice: 134,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -361,9 +361,9 @@ const BodyCards = () => {
           mbpsLast: 150,
           promo: 'Duplica tu velocidad x3 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 119,
+          price: 124,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 144,
+          regularPrice: 154,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -375,9 +375,9 @@ const BodyCards = () => {
           mbpsLast: 200,
           promo: 'Duplica tu velocidad x3 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 129,
+          price: 134,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 154,
+          regularPrice: 164,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -389,9 +389,9 @@ const BodyCards = () => {
           mbpsLast: 300,
           promo: 'Duplica tu velocidad x3 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 169,
+          price: 174,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 194,
+          regularPrice: 204,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -403,9 +403,9 @@ const BodyCards = () => {
           mbpsLast: undefined,
           promo: 'Duplica tu velocidad x3 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 254,
+          price: 259,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 284,
+          regularPrice: 294,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -417,9 +417,9 @@ const BodyCards = () => {
           mbpsLast: undefined,
           promo: 'Duplica tu velocidad x3 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 454,
+          price: 459,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 484,
+          regularPrice: 494,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -619,9 +619,9 @@ const BodyCards = () => {
           mbpsLast: 100,
           promo: 'Duplica tu velocidad x2 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 89,
+          price: 94,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 114,
+          regularPrice: 124,
           imgs: ARRAY_DUO,
           onClick: viewModal
         },
@@ -633,9 +633,9 @@ const BodyCards = () => {
           mbpsLast: 150,
           promo: 'Duplica tu velocidad x2 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 109,
+          price: 114,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 134,
+          regularPrice: 144,
           imgs: ARRAY_DUO,
           onClick: viewModal
         },
@@ -647,9 +647,9 @@ const BodyCards = () => {
           mbpsLast: 200,
           promo: 'Duplica tu velocidad x2 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 119,
+          price: 124,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 144,
+          regularPrice: 154,
           imgs: ARRAY_DUO,
           onClick: viewModal
         },
@@ -661,9 +661,9 @@ const BodyCards = () => {
           mbpsLast: 300,
           promo: 'Duplica tu velocidad x2 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 159,
+          price: 164,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 184,
+          regularPrice: 194,
           imgs: ARRAY_DUO,
           onClick: viewModal
         },
@@ -675,9 +675,9 @@ const BodyCards = () => {
           mbpsLast: undefined,
           promo: 'Duplica tu velocidad x2 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 244,
+          price: 249,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 274,
+          regularPrice: 284,
           imgs: ARRAY_DUO,
           onClick: viewModal
         },
@@ -689,9 +689,9 @@ const BodyCards = () => {
           mbpsLast: undefined,
           promo: 'Duplica tu velocidad x2 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 444,
+          price: 449,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 474,
+          regularPrice: 484,
           imgs: ARRAY_DUO,
           onClick: viewModal
         },
@@ -867,7 +867,6 @@ const BodyCards = () => {
           stylesMbps: { color: '#26aae1' },
           mbps: 1000,
           mbpsLast: undefined,
-          promo: 'Duplica tu velocidad x6 meses',
           img: IMG,
           stylesPrice: { background: '#26aae1', border: '1px solid #26aae1' },
           price: 491,
@@ -942,7 +941,7 @@ const BodyCards = () => {
           mbpsLast: undefined,
           promo: 'Duplica tu velocidad x2 meses',
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 249,
+          price: 244,
           timePromo: 'Precio promo x2 meses',
           regularPrice: 269,
           imgs: ARRAY_DUO_FONO,
@@ -972,9 +971,9 @@ const BodyCards = () => {
           stylesMbps: { color: '#ff5a0a' },
           mbps: 100,
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 129,
+          price: 134,
           timePromo: 'Precio promo x3 meses',
-          regularPrice: 154,
+          regularPrice: 164,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -984,9 +983,9 @@ const BodyCards = () => {
           stylesMbps: { color: '#ff5a0a' },
           mbps: 150,
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 149,
-          timePromo: 'Precio promo x2 meses',
-          regularPrice: 174,
+          price: 154,
+          timePromo: 'Precio promo x3 meses',
+          regularPrice: 184,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -996,9 +995,9 @@ const BodyCards = () => {
           stylesMbps: { color: '#ff5a0a' },
           mbps: 200,
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 159,
-          timePromo: 'Precio promo x2 meses',
-          regularPrice: 184,
+          price: 164,
+          timePromo: 'Precio promo x3 meses',
+          regularPrice: 194,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         },
@@ -1008,9 +1007,9 @@ const BodyCards = () => {
           stylesMbps: { color: '#ff5a0a' },
           mbps: 300,
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 199,
-          timePromo: 'Precio promo x2 meses',
-          regularPrice: 224,
+          price: 204,
+          timePromo: 'Precio promo x3 meses',
+          regularPrice: 234,
           imgs: ARRAY_TRIO,
           onClick: viewModal
         }
@@ -1039,8 +1038,8 @@ const BodyCards = () => {
           stylesPrice: { background: '#26aae1', border: '1px solid #26aae1' },
           price: 184,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 206,
           regularPrice2: 'Precio promo al 3er mes S/ 186',
+          regularPrice: 206,
           imgs:ARRAY_TRIO_DGO,
           onClick: viewModal
         },
@@ -1107,7 +1106,6 @@ const BodyCards = () => {
           styleCard: { border: '1px solid #26aae1' },
           stylesMbps: { color: '#26aae1' },
           mbps: 200,
-          promo: 'Duplica tu velocidad x6 meses',
           img: IMG,
           stylesPrice: { background: '#26aae1', border: '1px solid #26aae1' },
           price: 206,
@@ -1141,9 +1139,9 @@ const BodyCards = () => {
           stylesMbps: { color: '#ff5a0a' },
           mbps: 100,
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 119,
+          price: 124,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 144,
+          regularPrice: 154,
           imgs: ARRAY_DUO,
           onClick: viewModal
         },
@@ -1153,19 +1151,7 @@ const BodyCards = () => {
           stylesMbps: { color: '#ff5a0a' },
           mbps: 150,
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 139,
-          timePromo: 'Precio promo x2 meses',
-          regularPrice: 164,
-          imgs: ARRAY_DUO,
-          onClick: viewModal
-        },
-        {
-          title: 'Internet 100% Fibra',
-          styleCard: { border: '1px solid #ff5a0a' },
-          stylesMbps: { color: '#ff5a0a' },
-          mbps: 200,
-          stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 149,
+          price: 144,
           timePromo: 'Precio promo x2 meses',
           regularPrice: 174,
           imgs: ARRAY_DUO,
@@ -1175,11 +1161,23 @@ const BodyCards = () => {
           title: 'Internet 100% Fibra',
           styleCard: { border: '1px solid #ff5a0a' },
           stylesMbps: { color: '#ff5a0a' },
+          mbps: 200,
+          stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
+          price: 154,
+          timePromo: 'Precio promo x2 meses',
+          regularPrice: 184,
+          imgs: ARRAY_DUO,
+          onClick: viewModal
+        },
+        {
+          title: 'Internet 100% Fibra',
+          styleCard: { border: '1px solid #ff5a0a' },
+          stylesMbps: { color: '#ff5a0a' },
           mbps: 300,
           stylesPrice: { background: '#ff5a0a', border: '1px solid #ff5a0a' },
-          price: 189,
+          price: 194,
           timePromo: 'Precio promo x2 meses',
-          regularPrice: 214,
+          regularPrice: 224,
           imgs: ARRAY_DUO,
           onClick: viewModal
         }
@@ -1286,7 +1284,7 @@ const BodyCards = () => {
           img: IMG,
           stylesPrice: { background: '#26aae1', border: '1px solid #26aae1' },
           price: 236,
-          timePromo: 'Precio promo x3 meses',
+          timePromo: 'Precio promo x2 meses',
           regularPrice: 268,
           imgs:ARRAY_DUO_DGOFULL,
           onClick: viewModal
@@ -1436,6 +1434,7 @@ const BodyCards = () => {
           childrens={ childrens }
         />
       </div>
+
       <Modal
         active={ activeModal }
         onClick={ closeModal }
