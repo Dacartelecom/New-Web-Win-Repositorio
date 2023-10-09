@@ -66,6 +66,14 @@ const Footer = () => {
           </div>
 
     </div>
+    <div>
+      <a
+          href={`tel:${ numberCall }`}
+          className="fixed left-3 bottom-3 rounded-full w-16 h-16 bg-[#ff5a0a] text-white text-3xl flex items-center justify-center animate-[blink_2s_infinite] md:hidden"
+        >
+          <i className="fa-solid fa-phone-volume"></i>
+        </a>
+    </div>
     <div className='line '>
       <hr />
         <span className='bg-white text-[#ff5a0a] p-1 mr-20 rounded-lg max-md:hidden'>WIN - AGENCIA AUTORIZADA AGORA TELECOM</span>
@@ -130,7 +138,7 @@ const Footer = () => {
           <span>Derecho de acceso: solicitando información sobre los datos personales registrados en el banco de datos; derecho de rectificación (actualización, inclusión): con los que usted puede modificar los datos brindados, ya sea porque exista algún error, sean falsos, incompletos u otra causa; derecho de cancelación (supresión): ejerciendo este derecho es posible solicitar la supresión o cancelación de sus datos personales de nuestro banco de datos considerando que son esenciales para la ejecución del mismo; derecho de oposición: toda persona tienen la facultad de oponerse al uso de sus datos, cuando estos no han sido autorizados, asimismo puede oponerse por la situación personal concreta.
 </span>
           </div>
-</Modal>
+    </Modal>
 </div>
 
 
