@@ -25,7 +25,7 @@ function App() {
             my-3
           "
       >
-        Todas las Ofertas y Promociones vigentes hasta 31/10/2023
+        Todas las Ofertas y Promociones vigentes hasta 15/11/2023
       </p>
       <Footer />
     </>

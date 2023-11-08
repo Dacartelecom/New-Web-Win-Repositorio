@@ -14,6 +14,7 @@ const Form: FC<FormProps> = ({
 }) => {
   return (
     <form
+
       className={`
         ${ className }
         bg-slate-100
@@ -31,6 +32,7 @@ const Form: FC<FormProps> = ({
       `}
       action=''
       onSubmit={ onClick }
+      
 
     >
       <label
