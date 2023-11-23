@@ -18,6 +18,7 @@ const Carrousel: FC<CarrouselProps> = ({
   interval,
   classNameSlide,
   childrens,
+  colorButtons
 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
@@ -114,10 +115,13 @@ const Carrousel: FC<CarrouselProps> = ({
             <PrevButton
               onClick={scrollPrev}
               enabled={prevBtnEnabled}
+              className={colorButtons}
             />
             <NextButton
               onClick={scrollNext}
               enabled={nextBtnEnabled}
+              className={colorButtons}
+
             />
           </>
         }

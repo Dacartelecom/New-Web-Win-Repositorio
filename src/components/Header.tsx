@@ -28,8 +28,11 @@ const Header = () => {
     useEffect(() => {
         if (tSource) {
             switch (tSource) {
-            case '01winperu':
+              case '01winperu':
                 setNumberCall(() => '(01) 6806775');
+                break;
+              case '02winperu':
+                setNumberCall(() => '(01) 7540488');
                 break;
             
             default:

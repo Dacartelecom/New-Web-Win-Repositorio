@@ -312,7 +312,9 @@ const BodyCards = () => {
 
     if (tSource == '01winperu') {
       wsDataA.append("service", "callmeWinPeru1");
-    } else {
+    } else if (tSource == '02winperu') {
+      wsDataA.append("service", "callmeWinPeru1");
+    } else{
       wsDataA.append("service", "callmeWinPeru");
     }
     wsDataA.append("username", "dacarEs");
@@ -1361,6 +1363,9 @@ const BodyCards = () => {
     if (tSource) {
       switch (tSource) {
         case '01winperu':
+          setNumberCall(() => '(01) 6806775');
+          break;
+        case '02winperu':
           setNumberCall(() => '(01) 6806775');
           break;
       

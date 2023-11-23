@@ -101,6 +101,9 @@ const BodyCarrouselAndForm = () => {
         case '01winperu':
           setInputState(() => '(01) 6806775');
           break;
+        case '02winperu':
+          setInputState(() => '(01) 7540488');
+          break;
   
         default:
           setInputState(() => '(01) 6806774');
@@ -120,7 +123,9 @@ const BodyCarrouselAndForm = () => {
 
     if (tSource == '01winperu') {
       wsDataA.append("service", "callmeWinPeru1");
-    } else {
+    } else if (tSource == '02winperu') {
+      wsDataA.append("service", "callmeWinPeru2");
+    } else{
       wsDataA.append("service", "callmeWinPeru");
     }
     wsDataA.append("username", "dacarEs");
@@ -161,6 +166,7 @@ const BodyCarrouselAndForm = () => {
           styles={ STYLES_MOBILE }
           className="mobile"
           interval={ 5000 }
+          colorButtons='text-white'
         />
         <Carrousel
           classNameSlide="embla__slide"
@@ -172,6 +178,7 @@ const BodyCarrouselAndForm = () => {
           styles={ STYLES_DESKTOP }
           className="desktop"
           interval={ 5000 }
+          colorButtons='text-white'
         />
         <Form
           className="

@@ -13,4 +13,5 @@ export interface CarrouselProps {
   interval: number
   classNameSlide: string
   childrens?: JSX.Element[]
+  colorButtons?:string
 }
