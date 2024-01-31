@@ -27,6 +27,7 @@ const Button: FC<ButtonProps> = ({
       ${ disabled ? 'disabled' : '' }`
       
       }
+      disabled={ disabled ? true :  false}
       type='submit'
     >
       { text }

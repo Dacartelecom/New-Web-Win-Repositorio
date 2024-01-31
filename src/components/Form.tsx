@@ -83,7 +83,6 @@ const Form: FC<FormProps> = ({
         <Button
           text={"Envíanos Tu Número"}
           disabled={ inputState.length === 9 ? false : true }
-          type={"button"}
         />
       </div>
     </form>

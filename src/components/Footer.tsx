@@ -30,8 +30,11 @@ const Footer = () => {
     useEffect(() => {
         if (tSource) {
             switch (tSource) {
-            case '01winperu':
+              case '01winperu':
                 setNumberCall(() => '(01) 6806775');
+                break;
+            case '02winperu':
+                setNumberCall(() => '(01) 7540488');
                 break;
             
             default:
@@ -42,26 +45,25 @@ const Footer = () => {
     },[tSource]);
 
   return (
-<div className='Container'>
-    <div className='container-footer'>
-    <div className='footer-links'>
+<div className=' '>
+    {/* <div className='w-full bg-[#ff5a0a]'>
+      <div className='flex items-center w-full '>
         <div className='Logo-header-footer'>
           <img src={`
         ${ logoWhite }`} alt="" />
           </div>
 
           <div className='number-header-footer font-bold'>
-       <ul>
-        <li><h2>Llámanos al</h2></li>
-        <li><a href={`tel:${ numberCall }`}>{ numberCall }</a></li>
+       <ul className='flex'>
+        <span className='bg-white text-[#ff5a0a] p-1 rounded-lg max-md:hidden items-center'>WIN - AGENCIA AUTORIZADA AGORA TELECOM</span>
        </ul>
 
           </div>
 
          <div className='condiciones-footer'>
         <ul className='w-full'>
-          <li><span  className='terminos-condiciones' onClick={viewModalT}>Términos y Condiciones del Sitio Web</span></li>
-          <li><span  className='terminos-condiciones' onClick={viewModalC}>Política de Privacidad</span></li>
+          <li><h2>Llámanos al</h2></li>
+        <li><a href={`tel:${ numberCall }`}>{ numberCall }</a></li>
         </ul>
           </div>
 
@@ -76,9 +78,42 @@ const Footer = () => {
     </div>
     <div className='line '>
       <hr />
-        <span className='bg-white text-[#ff5a0a] p-1 mr-20 rounded-lg max-md:hidden'>WIN - AGENCIA AUTORIZADA AGORA TELECOM</span>
+      <span  className='terminos-condiciones' onClick={viewModalT}>Términos y Condiciones del Sitio Web</span> | <span  className='terminos-condiciones' onClick={viewModalC}>Política de Privacidad</span>
       </div>
       
+    </div> */}
+    <div className="flex h-[250px] flex-col bg-[#ff5a0a] text-white max-lg:h-auto">
+        <div className="flex justify-around items-center h-full w-full max-lg:flex-col ">
+          <div className=''> 
+          <img src={`${logoWhite}`} alt="" className='w-[250px]'/> 
+          </div>
+
+      <div className='grid grid-cols-1 text-2xl max-lg:flex max-lg:flex-col max-lg:my-5  max-lg:text-lg'> 
+      <div className='flex flex-col'>
+        <span className='bg-white text-[#ff5a0a] p-1 rounded-lg items-center'>WIN - AGENCIA AUTORIZADA AGORA TELECOM</span>
+      </div>
+      </div>
+      
+      <div className="flex items-center flex-col w-[380px] max-lg:my-5 text-left max-lg:text-center"> 
+      <ul className='w-full'>
+          <li className='text-5xl font-bold'><h2>Llámanos al</h2></li>
+        <li className='text-6xl font-bold'><a href={`tel:${ numberCall }`}>{ numberCall }</a></li>
+        </ul>
+       </div>
+      </div>
+      <div>
+      <a
+          href={`tel:${ numberCall }`}
+          className="fixed left-3 bottom-3 rounded-full w-16 h-16 bg-[#ff5a0a] text-white text-3xl flex items-center justify-center animate-[blink_2s_infinite] md:hidden"
+        >
+          <i className="fa-solid fa-phone-volume"></i>
+        </a>
+    </div>
+      <hr className="w-[90%] m-auto " />
+      <div className="text-center flex justify-center max-lg:flex-col max-lg:flex">
+      <span  className='terminos-condiciones max-lg:mx-0 mx-2 underline' onClick={viewModalT}>Términos y Condiciones del Sitio Web 
+      </span> <span className='mx-2'>|</span>  <span  className='terminos-condiciones max-lg:mx-0 mx-2 underline' onClick={viewModalC}> Política de Privacidad</span>
+      </div>
     </div>
 
     <Modal active={ activeModalT }

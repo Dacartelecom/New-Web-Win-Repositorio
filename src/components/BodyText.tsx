@@ -44,7 +44,7 @@ const BodyText = () => {
             lg:text-xl
           "
       >
-        Contrata HOY un TRÍO WIN con Internet 100% Fibra + WINTV + FONOWIN a un precio promocional por los 2 primeros meses y duplicamos la velocidad de tu Internet durante 6 meses
+        Contrata HOY un TRÍO WIN con Internet 100% Fibra + WINTV Plus + FONOWIN a un precio promocional por los 2 primeros meses y duplicamos la velocidad de tu Internet durante 6 meses
       </p>
 
     </div>
