@@ -37,8 +37,8 @@ const STYLES_DESKTOP: CSSProperties = {
 export const imagesMobile = [
 
   `${imageMobil1}`,
-  `${imageMobil2}`,
   `${imageMobil3}`,
+  `${imageMobil2}`,
   `${imageMobil5}`,
   `${imageMobil4}`,
 
@@ -47,8 +47,8 @@ export const imagesMobile = [
 export const imagesDesktop = [
 
   `${imageDesktop1}`,
-  `${imageDesktop2}`,
   `${imageDesktop3}`,
+  `${imageDesktop2}`,
   `${imageDesktop5}`,
   `${imageDesktop4}`,
 
