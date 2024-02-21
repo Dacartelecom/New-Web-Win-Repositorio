@@ -28,7 +28,7 @@ const SubSectionButton: FC<SubSectionButtonProps> = ({
       <span
         className='
           font-semibold
-          text-xl
+          text-base
         '
       >
         { text }

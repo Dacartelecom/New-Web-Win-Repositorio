@@ -11,10 +11,12 @@
   },
   "homepage": "http://internetwinhogar.com.pe/",
   "dependencies": {
+    "clsx": "^2.1.0",
     "embla-carousel-react": "^8.0.0-rc12",
     "font-awesome-assets": "^0.0.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

@@ -3,6 +3,7 @@ import { FC } from 'react'
 import Button from './Button'
 import { BodyPlanesProps } from '../interfaces/BodyPlanesProps'
 import PlusIcon from './PlusIcon';
+import { cn } from '../utils/cn';
 
 const BodyPlanes: FC<BodyPlanesProps> = ({
   title,
@@ -14,6 +15,7 @@ const BodyPlanes: FC<BodyPlanesProps> = ({
   price,
   promo,
   img,
+  classImg,
   timePromo,
   regularPrice,
   regularPrice2,
@@ -98,9 +100,10 @@ const BodyPlanes: FC<BodyPlanesProps> = ({
           <img
             src={ img.img }
             alt={ img.text }
-            className='
+            className={cn(`
               w-20
-            '
+              ${classImg}
+            `)}
           />
         </div>
       }

@@ -12,6 +12,7 @@ export interface BodyPlanesProps {
   mbpsLast?: number
   promo?: string
   img?: img
+  classImg?: string
   aditional?: string
   stylesPrice: CSSProperties
   price: number
