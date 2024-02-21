@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 import { useEffect, useState } from 'react';
-import logoWhite from '../../public/win_logo_white.png';
 import './Footer.css'
 import Modal from './Modal';
 
@@ -85,7 +84,7 @@ const Footer = () => {
     <div className="flex h-[250px] flex-col bg-[#ff5a0a] text-white max-lg:h-auto">
         <div className="flex justify-around items-center h-full w-full max-lg:flex-col ">
           <div className=''> 
-          <img src={`${logoWhite}`} alt="" className='w-[250px]'/> 
+          <img src="https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/win_logo_white.png?alt=media&token=b41c3b04-5514-4862-a36d-cc1c5df32f5d" alt="" className='w-[250px]'/> 
           </div>
 
       <div className='grid grid-cols-1 text-2xl max-lg:flex max-lg:flex-col max-lg:my-5  max-lg:text-lg'> 

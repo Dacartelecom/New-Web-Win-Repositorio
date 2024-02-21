@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 import  { useEffect, useState } from 'react';
-import logo from '../../public/win_logo_white.png';
 import Modal from './Modal';
 
 
@@ -57,7 +56,7 @@ const Header = () => {
       '
     >
         <img
-          src={ `${logo}` }
+          src="https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/win_logo_white.png?alt=media&token=b41c3b04-5514-4862-a36d-cc1c5df32f5d"
           alt='logo win'
           className='
             w-4/12

@@ -155,22 +155,30 @@ const BodyPlanes: FC<BodyPlanesProps> = ({
       >
         { timePromo }
       </span>
-      <span
-        className='
-          text-[#301D19]
-          font-bold
-        '
-      >
-        { regularPrice2 }
-      </span>
-      <span
-        className='
-          text-[#301D19]
-          font-bold
-        '
-      >
-        Precio regular S/{ regularPrice }
-      </span>
+      {
+        regularPrice2 ?
+        <span
+          className='
+            text-[#301D19]
+            font-bold
+          '
+        >
+          Precio del 4to al 6to mes S/{ regularPrice2 }
+        </span> :
+        <></>
+      }
+      {
+        regularPrice ?
+        <span
+          className='
+            text-[#301D19]
+            font-bold
+          '
+        >
+          Precio regular S/{ regularPrice }
+        </span> :
+        <></>
+      }
       <Button
         text={'Quiero este plan'}
         onClick={ onClick }

@@ -6,16 +6,6 @@ import  { useEffect, useState } from 'react';
 import Carrousel from "../components/Carrousel";
 import { EmblaOptionsType } from "embla-carousel-react";
 import { CSSProperties } from "react";
-import imageMobil1 from '../../public/WinPortadaCel1.webp';
-import imageMobil2 from '../../public/WinPortadaCel2.webp';
-import imageMobil3 from '../../public/WinPortadaCel3.webp';
-import imageMobil4 from '../../public/WinPortadaCel4.webp';
-import imageMobil5 from '../../public/WinPortadaCel5.webp';
-import imageDesktop1 from '../../public/WinPortada1.webp';
-import imageDesktop2 from '../../public/WinPortada2.webp';
-import imageDesktop3 from '../../public/WinPortada3.webp';
-import imageDesktop4 from '../../public/WinPortada4.webp';
-import imageDesktop5 from '../../public/WinPortada5.webp';
 import Form from "../components/Form";
 import './Global.css'
 
@@ -24,7 +14,7 @@ const OPTIONS: EmblaOptionsType = {
   slidesToScroll: 'auto',
   containScroll: 'trimSnaps'
 };
-const SLIDE_COUNT= 5;
+const SLIDE_COUNT= 6;
 
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {
@@ -35,23 +25,21 @@ const STYLES_DESKTOP: CSSProperties = {
 };
 
 export const imagesMobile = [
-
-  `${imageMobil1}`,
-  `${imageMobil3}`,
-  `${imageMobil2}`,
-  `${imageMobil5}`,
-  `${imageMobil4}`,
-
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/1%20win-MOVIL-banner-landing-tu-fibra-100_.webp?alt=media&token=2bde54fc-c39a-4a6a-a35d-b01261c50f6f",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/2%20BANNER-WIN-MOVIL-trio-L1max.webp?alt=media&token=dd4356c6-c9a8-4b7d-8bf0-b796d645f722",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/3%20BANNER-WIN-MOVIL-trio.webp?alt=media&token=6afa65e8-3b3e-4daa-bcb4-b3c738bb6085",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/4%20BANNER-WIN-MOVIL-duo.webp?alt=media&token=10252a36-eab3-4378-9c1e-39092a03282c",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/5%20BANNER-WIN-MOVIL-gammer-duo.webp?alt=media&token=dfd1bb58-9506-4a79-8c8b-7b20473e93fe",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/WinPortadaCel4.webp?alt=media&token=c4640c0e-2676-4136-8a61-723c5013013e",
 ];
 
 export const imagesDesktop = [
-
-  `${imageDesktop1}`,
-  `${imageDesktop3}`,
-  `${imageDesktop2}`,
-  `${imageDesktop5}`,
-  `${imageDesktop4}`,
-
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/1%20win-banner-landing-tu-fibra-100_.webp?alt=media&token=c26f8039-da4b-4b35-a18f-3d7263be96be",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/2%20BANNER-WIN-trio-L1max.webp?alt=media&token=78141224-8277-40ad-8327-c2b2150df45a",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/3%20BANNER-WIN--trio.webp?alt=media&token=95a53ed2-104c-4fc5-ae39-c04b30591f9f",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/4%20BANNER-WIN-duo.webp?alt=media&token=8c4ee0e8-253b-4611-9f4c-afc1ec83fd05",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/5%20BANNER-WIN-gammer-duo.webp?alt=media&token=51b0c9e3-4d36-43e2-9d40-07efcfb37228",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/WinPortada4.webp?alt=media&token=7a1d20f4-004a-4cc8-a2f3-031aaa10b181",
 ];
 
 
