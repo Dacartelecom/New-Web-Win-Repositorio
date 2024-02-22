@@ -86,7 +86,7 @@ const ARRAY_TRIO_DGO_L1MAX=[
     text:'Mayor velocidad'
   },{
     img:"https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/tvwin.png?alt=media&token=12fa8317-f6b7-4152-be7d-f298133b1944",
-    text:'12 canales en vivo'
+    text:'16 canales en vivo'
   },{
     img:"https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/diamante.png?alt=media&token=c5323a44-112c-4683-b3e5-dd5d86a0f0fd",
     text:'Graba tus programas favoritos'
@@ -192,7 +192,7 @@ const ARRAY_DUO_DGO_L1MAX=[
     text:'Mayor velocidad'
   },{
     img:"https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/tvwin.png?alt=media&token=12fa8317-f6b7-4152-be7d-f298133b1944",
-    text:'12 canales en vivo'
+    text:'16 canales en vivo'
   },{
     img:"https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/multitv.png?alt=media&token=a79385d3-21bd-4ede-834d-097d8e39e1f8",
     text:'Hasta 2 dispositivos en simultáneo'
