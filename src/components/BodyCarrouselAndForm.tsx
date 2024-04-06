@@ -30,7 +30,7 @@ export const imagesMobile = [
   "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/3%20BANNER-WIN-MOVIL-trio.webp?alt=media&token=1f198b88-ab6d-4699-ae0d-cc111c391b37",
   "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/4%20BANNER-WIN-MOVIL-duo.webp?alt=media&token=10252a36-eab3-4378-9c1e-39092a03282c",
   "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/5%20BANNER-WIN-MOVIL-gammer-duo.webp?alt=media&token=8327e637-4e6a-4280-8694-e7fa39628ccf",
-  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/WinPortadaCel4.webp?alt=media&token=c4640c0e-2676-4136-8a61-723c5013013e",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/WinPortadaCel12.webp?alt=media&token=420c8fc8-1b3a-4eab-a8bd-535ca42e21fb",
 ];
 
 export const imagesDesktop = [
@@ -39,7 +39,7 @@ export const imagesDesktop = [
   "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/3%20BANNER-WIN--trio.webp?alt=media&token=47c7c671-55d1-4c93-be81-f2183ca52cdb",
   "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/4%20BANNER-WIN-duo.webp?alt=media&token=8c4ee0e8-253b-4611-9f4c-afc1ec83fd05",
   "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/5%20BANNER-WIN-gammer-duo.webp?alt=media&token=8a4cde9c-2c3f-4d29-8ee3-146ffda11d06",
-  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/WinPortada4.webp?alt=media&token=7a1d20f4-004a-4cc8-a2f3-031aaa10b181",
+  "https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/WinPortada12.webp?alt=media&token=760e0849-71a9-4cee-ac8b-299f867de11f",
 ];
 
 
