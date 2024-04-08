@@ -362,7 +362,7 @@ const BodyCards = () => {
     if (tSource == '01winperu') {
       wsDataA.append("service", "callmeWinPeru1");
     } else if (tSource == '02winperu') {
-      wsDataA.append("service", "callmeWinPeru1");
+      wsDataA.append("service", "callmeWinPeru2");
     } else{
       wsDataA.append("service", "callmeWinPeru");
     }
